@@ -77,7 +77,7 @@ public class Main {
             Product p = prodotti.get(i);
             sb.append(p.getName()).append("@").append(p.getCategory()).append("@").append(p.getPrice());
             if (i < prodotti.size() - 1) {
-                sb.append("#");
+                sb.append(" ");
             }
             try {
                 FileUtils.writeStringToFile(new File(percorso), sb.toString(), "UTF-8");
